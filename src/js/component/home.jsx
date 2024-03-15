@@ -21,21 +21,21 @@ const Home = () => {
 				<div className="d-flex flex-column bg-dark p-5 justify-content-center align-items-center" style={{ maxWidth: "150px" }}>
 
 					<div onMouseOver={() => setColor("red")} className="btn btn-danger p-5" style={{
-						width: "50px", height: "50px",
+						width: "50px", height: "50px", borderRadius: "50%",
 						boxShadow: `${color == "red" ? "0px 0px 100px 50px rgb(255, 34, 0)" : ""}`
 					}} onMouseLeave={() => setColor("")}>
 
 					</div>
 
 					<div onMouseOver={() => setColor1(!color1)} className="btn p-5 mt-3 btn-warning" style={{
-						width: "50px", height: "50px",
+						width: "50px", height: "50px", borderRadius: "50%",
 						boxShadow: `${color1 ? "0px 0px 100px 50px yellow" : ""}`
 					}} onMouseLeave={() => setColor1(false)}>
 
 					</div>
 
 					<div onMouseOver={() => setColor2(!color1)} className="btn p-5 mt-3 btn-success" style={{
-						width: "50px", height: "50px",
+						width: "50px", height: "50px", borderRadius: "50%",
 						boxShadow: `${color2 ? "0px 0px 100px 50px green" : ""}`
 					}} onMouseLeave={() => setColor2(false)}>
 
